@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>导航图</title>
+    <link rel="stylesheet" href="./css/listguide.css"/>
+    <link rel="shortcut icon" href="9_091018071454_1_r2_c1.jpg">
+</head>
+<body>
+<!--时钟开始-->
+<div class="clock">
+    <div id="h"></div>
+    <div id="m"></div>
+    <div id="s"></div>
+</div>
+<!--时钟结束-->
+
+<!--导航表开始-->
+<div class="contain">
+    <ul class = "clearfix">
+        <li style = "background-color: #FFFF66;"><a href="huawei/index.html" target = "_blank">华为官网<img src="./images/DIY.png" /></a></li>
+        <li style = "background-color: #CC0066;"><a href="360quanpinggundong/index.html" target = "_blank">全屏滚动<img src="./images/Jap.png" /></a></li>
+        <li style = "background-color: #9900FF;"><a href="fafu/index.html" target = "_blank">法福手机端<img src="./images/java.png" /></a></li>
+        <li style = "background-color: #00FFFF;"><a href="siku/index.html" target = "_blank">寺库PC端<img src="./images/taobao.png" /></a></li>
+        <li style = "background-color: #33FF99;"><a href="JD/JD.html" target = "_blank">京东手机端<img src="./images/seo.png" /></a></li>
+        <li style = "background-color: #FF0033;"><a href="rotateBall/rotateBall.html" target = "_blank">HTML5和CSS3<img src="./images/web.png" /></a></li>
+    </ul>
+</div>
+<!--导航表结束-->
+
+<!--小球开始-->
+<div class="ballWrapper">
+    <div class="ball"></div>
+    <div class="ballShadow"></div>
+</div>
+<!--小球结束-->
+</body>
+</html>
+<script src = "./js/jquery-1.11.3.min.js"></script>
+<script>
+    //需要现在的时间
+    var h = document.getElementById("h")//时针
+    var m = document.getElementById("m")//分针
+    var s = document.getElementById("s")//秒针
+    setInterval(clock,100);
+    function clock() {
+        var date = new Date();
+        var ms = date.getMilliseconds();//到毫秒数
+        var ss = date.getSeconds()+ ms/1000;　//当前的秒数 + 走过的秒数
+        var mm = date.getMinutes() +　ss/60;　　　//当前的分数 + 走过的分数
+        var hh = date.getHours()%12 +　mm/60;　　　　//当前的小时  +走过的小时
+        //开始旋转
+        //60秒    一圈360度        一秒   6
+        s.style.webkitTransform = "rotate("+ss*6+"deg)";
+        m.style.webkitTransform = "rotate("+mm*6+"deg)";
+        h.style.webkitTransform = "rotate("+hh*30+"deg)";
+    }
+    //4:30;   4+ 30/60   =   4.5
+    $(function() {
+        $(".contain ul li").hover(function(){
+            $(this).find("img").fadeIn(500);
+        },function(){
+            $(this).find("img").fadeOut(500);
+        })
+    })
+</script>

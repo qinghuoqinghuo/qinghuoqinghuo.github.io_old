@@ -1,0 +1,1120 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+li {
+
+    list-style: none;
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+    color: #8C8C8C;
+}
+
+a:hover {
+    color: #CA141D;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.bac {
+    background-color: #FAFAFA;
+}
+
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+.clearfix:after {
+    content: ".";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.p-r {
+    position: relative;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.tac {
+    text-align: center;
+}
+/*扇形导航栏开始*/
+.menuHolder {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menuHolder ul {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0 width : 0;
+    height: 0;
+    background: red;
+}
+
+.menuHolder ul li a {
+    color: #000;
+    text-decoration: none;
+    font: bold 13px/30px arial, sans-serif;
+    text-align: center;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.menuHolder ul.p2 {
+    z-index: -1;
+}
+
+.menuHolder ul.p3 {
+    z-index: -1;
+}
+
+.menuHolder li.s1 > a {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #33FFFF;
+    border-radius: 0 0 100px 0;
+}
+
+.menuHolder li.s2 > a {
+    position: absolute;
+    display: block;
+    width: 100px;
+    padding-left: 100px;
+    height: 200px;
+    background: #FF0033;
+    border-radius: 0 0 200px 0;
+}
+
+.menuHolder ul.p3 li a {
+    position: absolute;
+    display: block;
+    width: 100px;
+    padding-left: 200px;
+    height: 300px;
+    background: #FF33FF;
+    border-radius: 0 0 300px 0;
+}
+
+.menuHolder ul ul {
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotateZ(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.menuHolder li.s2:nth-of-type(6) > a {
+    background: #990099;
+    -webkit-transform: rotate(75deg);
+    -moz-transform: rotateZ(75deg);
+    -ms-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    transform: rotate(75deg);
+}
+
+.menuHolder li.s2:nth-of-type(5) > a {
+    background: #0000FF;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotateZ(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.menuHolder li.s2:nth-of-type(4) > a {
+    background: #00FF66;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotateZ(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menuHolder li.s2:nth-of-type(3) > a {
+    background: #FFFF00;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotateZ(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.menuHolder li.s2:nth-of-type(2) > a {
+    background: #FF9900;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotateZ(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+.menuHolder .a6 li:nth-of-type(6) > a {
+    background: #FF9900;
+    -webkit-transform: rotate(75deg);
+    -moz-transform: rotateZ(75deg);
+    -ms-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    transform: rotate(75deg);
+}
+
+.menuHolder .a6 li:nth-of-type(5) > a {
+    background: #FFFF00;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotateZ(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.menuHolder .a6 li:nth-of-type(4) > a {
+    background: #CC33CC;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotateZ(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menuHolder .a6 li:nth-of-type(3) > a {
+    background: #00FF66;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotateZ(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.menuHolder .a6 li:nth-of-type(2) > a {
+    background: #FF0066;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotateZ(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+.menuHolder .a5 li:nth-of-type(5) > a {
+    background: red;
+    -webkit-transform: rotate(72deg);
+    -moz-transform: rotateZ(72deg);
+    -ms-transform: rotate(72deg);
+    -o-transform: rotate(72deg);
+    transform: rotate(72deg);
+}
+
+.menuHolder .a5 li:nth-of-type(4) > a {
+    background: #FFFF33;
+    -webkit-transform: rotate(54deg);
+    -moz-transform: rotateZ(54deg);
+    -ms-transform: rotate(54deg);
+    -o-transform: rotate(54deg);
+    transform: rotate(54deg);
+}
+
+.menuHolder .a5 li:nth-of-type(3) > a {
+    background: #66FF66;
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotateZ(36deg);
+    -ms-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    transform: rotate(36deg);
+}
+
+.menuHolder .a5 li:nth-of-type(2) > a {
+    background: #CC66FF;
+    -webkit-transform: rotate(18deg);
+    -moz-transform: rotateZ(18deg);
+    -ms-transform: rotate(18deg);
+    -o-transform: rotate(18deg);
+    transform: rotate(18deg);
+}
+
+.menuHolder .a3 li:nth-of-type(3) > a {
+    background: #FF6633;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotateZ(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.menuHolder .a3 li:nth-of-type(2) > a {
+    background: #99FF99;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotateZ(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.menuHolder li.s1:hover ul.p2 {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.menuHolder li.s2:hover ul.p3 {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.menuHolder ul li:hover > a {
+    background: #FF66FF;
+    color: #fff;
+}
+
+.menuHolder li.s2:hover > a {
+    background: #d00;
+    color: #fff;
+}
+
+.menuHolder .a6 li:hover > a {
+    background: #b00;
+    color: #fff;
+}
+
+.menuHolder .a5 li:hover > a {
+    background: #b00;
+    color: #fff;
+}
+
+.menuHolder .a3 li:hover > a {
+    background: #b00;
+    color: #fff;
+}
+/*扇形导航栏结束*/
+
+/*返回顶部火箭开始*/
+
+#rocket-to-top div {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 149px;
+}
+
+#rocket-to-top .level-2 {
+    background: url("../images/rocket_button_up.png") no-repeat scroll -149px 0 transparent;
+    height: 250px;
+    opacity: 0;
+    z-index: 1;
+}
+
+#rocket-to-top .level-3 {
+    background: none repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 150px;
+    z-index: 2;
+}
+
+#rocket-to-top {
+    background: url("../images/rocket_button_up.png") no-repeat scroll 0 0 transparent;
+    cursor: default;
+    display: block;
+    height: 250px;
+    width: 149px;
+    margin: -125px 0 0;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 80%;
+    z-index: 11;
+}
+/*返回顶部火箭结束*/
+
+
+/*商品顶部banner开始*/
+.banner {
+    background: #F6EEE3; /*图片色*/
+}
+
+.bannerleft {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bannerright {
+    top: 0;
+    right: 0;
+}
+
+/*商品顶部banner结束*/
+
+/*商品顶部nav开始*/
+.nav {
+    border-bottom: 1px solid #EDEDED;
+}
+
+.nav li {
+    font-size: 12px;
+    text-align: center;
+    line-height: 27px;
+    height: 30px;
+    font-family: "Microsoft Yahei";
+    margin-top: 0;
+}
+
+.nav .navleft li {
+    float: left;
+    margin-right: 17px;
+}
+
+.nav .navright {
+    float: right;
+}
+
+.nav .navright li {
+    float: left;
+    margin-left: 17px;
+}
+
+/*商品顶部nav结束*/
+
+/*商品search开始*/
+.search {
+    height: 120px;
+    overflow: hidden;
+}
+
+.searchleft {
+    width: 220px;
+    line-height: 120px;
+    text-align: center;
+}
+
+.searchcenter {
+    width: 700px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.searchcenter .searchcenter1 {
+    width: 400px;
+    border: 2px solid #CA141D;
+    height: 30px;
+}
+
+.searchcenter .searchcenter1 .searchtext {
+    width: 340px;
+    height: 30px;
+    line-height: 32px;
+    float: left;
+    border: 0 none;
+    padding-left: 10px;
+}
+
+.searchcenter .searchcenter1 .searchsubmit {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    background: #CA141D;
+    color: #FFFFFF;
+    border: 0 none;
+    float: left;
+    cursor: pointer;
+}
+
+.searchcenter .searchcenter1 .searchsubmit:hover {
+    opacity: 0.8;
+}
+
+.searchcenter .searchcenter2 {
+    width: 200px;
+    border: 2px solid #E5E5E5;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.searchcenter .searchcenter2 li {
+    float: left;
+    margin-left: 10px;
+    line-height: 30px;
+    height: 30px;
+    color: #000000;
+    font-size: 14px;
+}
+
+.searchcenter .searchcenter3 {
+    width: 600px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.searchcenter .searchcenter3 li {
+    color: #E5E5E5;
+    text-align: center;
+    float: left;
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+.searchright {
+    width: 90px;
+    height: 80px;
+    margin-top: 20px;
+    background: red;
+    position: relative;
+    background: url(../images/qrcode_vmall_app01.png) no-repeat;
+}
+
+.searchright span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #dddddd;
+    position: absolute;
+}
+
+.searchright .searchright-1 {
+    top: 0;
+    right: 0;
+}
+
+.searchright .searchright-2 {
+    top: 15px;
+    right: 0;
+}
+
+/*商品search结束*/
+/*商品lists开始*/
+.lists {
+    height: 40px;
+    background-color: #333333;
+}
+.ssss {
+    background: green;
+}
+.lists .listsall {
+    width: 250px;
+    line-height: 40px;
+    text-align: left;
+    background: #CA141D;
+}
+
+.lists .listsall h3 a {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font: 16px 'Tahoma', \5FAE\8F6F\96C5\9ED1;
+}
+
+.lists .listsall .lists-a {
+    width: 250px;
+    background: #FFFFFF;
+    height: 448px;
+    z-index: 3;
+}
+
+.lists .listsall .lists-a dl {
+    height: 64px;
+}
+
+.lists .listsall .lists-a dl:hover {
+    background: #EDEDED;
+}
+.lists .listsall .lists-a dl ul {
+    width: 200px;
+    height: 448px;
+    background: #EDEDED;
+    margin-left: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.lists .listsall .lists-a dl ul li {
+    text-align: center;
+    height: 64px;
+    line-height: 64px;
+}
+
+.lists .listsall .lists-a dl ul li:hover {
+    background-color:#DDDDDD;
+}
+.lists .listsall .lists-a a {
+    color: #000000;
+    font: 16px 'Tahoma', \5FAE\8F6F\96C5\9ED1;
+}
+
+.lists .listsall .lists-a a:hover {
+    color: #CA141D;
+    text-decoration: underline;
+}
+
+.lists .listsall .lists-a dl dt {
+    height: 35px;
+    line-height: 48px;
+}
+
+.lists .listsall .lists-a dl dt a {
+    margin-left: 20px;
+}
+
+.lists .listsall .lists-a dl dd {
+    height: 29px;
+    line-height: 18px;
+}
+
+.lists .listsall .lists-a dl dd a {
+    color: #8C8C8C;
+    margin-left: 20px;
+    font: 14px 'Tahoma', \5FAE\8F6F\96C5\9ED1;
+}
+
+.lists .listsnav li {
+    float: left;
+    line-height: 40px;
+}
+
+.lists .listsnav li:hover {
+    background: #000000;
+}
+
+.lists .listsnav li a {
+    padding: 1px 34px;
+    color: #FFFFFF;
+    font: 16px 'Tahoma', \5FAE\8F6F\96C5\9ED1;
+}
+
+.lists .listsnav li span {
+    width: 24px;
+    height: 16px;
+    background: url(../images/hot.png) no-repeat;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+}
+.lists .listsnav li span.scale1 {
+    animation:scale  0.5s infinite;
+    -webkit-animation:scale  0.5s infinite;
+    -moz-animation:scale  0.5s infinite;
+    -o-animation:scale  0.5s  infinite ;
+
+}
+@keyframes scale1 {
+    0% {transform:scale(1);}
+    25% {transform:scale(1.2);}
+    50% {transform:scale(1);}
+    75% {transform:scale(0.8);}
+    100% {transform:scale(1);}
+}
+@-webkit-keyframes scale1 {
+    0% {transform:scale(1);}
+    25% {transform:scale(1.2);}
+    50% {transform:scale(1);}
+    75% {transform:scale(0.8);}
+    100% {transform:scale(1);}
+}
+@-moz-keyframes scale1 {
+    0% {transform:scale(1);}
+    25% {transform:scale(1.2);}
+    50% {transform:scale(1);}
+    75% {transform:scale(0.8);}
+    100% {transform:scale(1);}
+}
+@-o-keyframes scale1 {
+    0% {transform:scale(1);}
+    25% {transform:scale(1.2);}
+    50% {transform:scale(1);}
+    75% {transform:scale(0.8);}
+    100% {transform:scale(1);}
+}
+
+.slider, .slider-panel img, .slider-extra {
+    width: 100%;
+    height: 448px;
+}
+
+.slider, .slider-main, .slider-extra {
+    position: relative;
+}
+
+.slider-panel, .slider-nav {
+    position: absolute;
+    z-index: 1;
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -56px;
+}
+
+.slider-nav li {
+    color: #fff;
+    background: #3e3e3e;
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.slider-nav .slider-item-selected {
+    background: red;
+}
+    /*商品lists结束*/
+
+
+
+
+
+
+/*商品手机开始*/
+.main-phone {
+    width:1200px;
+    height: 800px;
+    margin-bottom: 20px;
+}
+
+.main-phone1 {
+    margin-top: 20px;
+}
+
+.main-nav {
+    margin: 0 auto;
+    height: 20px;
+    line-height: 20px;
+    width:1200px;
+    display: block;
+    overflow: hidden;
+}
+.main-nav-l {
+    width:200px;
+}
+.main-nav-l a {
+    border-left: 3px solid #CA141D;
+    color: #000000;
+    font: bold 20px/15px "Microsoft Yahei";
+    padding-left: 20px;
+}
+
+.main-nav-l a:hover {
+    color: #CA141D;
+}
+
+.main-nav-l span {
+    margin-left: 20px;
+    font: 14px/15px "Microsoft Yahei";
+
+}
+.man-nav-r {
+    width: 390px;
+}
+.man-nav-r li {
+    float: left;
+}
+
+.man-nav-r li a {
+    font: bold 14px/15px "Microsoft Yahei";
+    margin-left: 20px;
+
+}
+
+.mainProducts {
+    width: 1200px;
+    height: 780px;
+
+}
+.mainProducts ul {
+    width: 1200px;
+    height: 780px;
+    text-align: center;
+}
+.mainProducts ul li {
+    width: 250px;
+    height: 336px;
+    float: left;
+    border: 1px solid #E5E5E5;
+    margin-left: 40px;
+    margin-top: 40px;
+    list-style: none;
+    position: relative;
+    color: #CA141D;
+    font-family: "Microsoft yahei";
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+}
+.mainProducts ul li.top{
+    animation:top .7s ease-in-out;
+    -webkit-animation:top .7s ease-in-out;
+}
+.mainProducts ul li.rot {
+    animation:rot .7s ease-in-out;
+    -webkit-animation:rot .7s ease-in-out;
+}
+.mainProducts ul li.scale {
+    animation:scale .7s ease-in-out;
+    -webkit-animation:scale .7s ease-in-out;
+}
+.mainProducts ul li.left {
+    animation: left .7s ease-in-out;
+    -webkit-animation: left .7s ease-in-out;
+}
+.mainProducts ul li .mainProducts-img {
+    display: block;
+    width: 250px;
+    height: 250px;
+}
+.mainProducts ul li .mainProducts-img img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.mainProducts ul li .mainProducts-text {
+    color: #CA141D ;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+}
+.mainProducts ul li .mainProducts-text .mainProducts-name {
+    color: #000000;
+}
+.mainProducts ul li .mainProducts-text .mainProducts-name:hover {
+    color: #CA141D ;
+}
+.mainProducts ul li .mainProducts-price {
+    display: block;
+    cursor: text;
+    font-size: 22px;
+    height: 50px;
+    line-height:50px;
+}
+.mainProducts ul li a:hover {
+    text-decoration: underline;
+}
+.mainProducts ul li:hover {
+    box-shadow: 0 0 0 4px pink inset;
+}
+.mainProducts ul li .mainProducts-hot {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+}
+.mainProducts ul li .mainProducts-hot img {
+    width: 50px;
+    height: 50px;
+}
+.mainProducts ul li .mainProducts-slide {
+    background: #36D4FB;
+    width:250px;
+    height: 90px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: none;
+
+}
+.mainProducts ul li .mainProducts-slide p {
+    width: 200px;
+    text-align: center;
+    margin: 10px auto;
+
+}
+.mainProducts ul li .mainProducts-slide .text-one {
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: "Microsoft Yahei";
+}
+.mainProducts ul li .mainProducts-slide .text-two {
+    font-size: 10px;
+    color: #E6E0E0;
+    font-family: "Microsoft Yahei";
+}
+@keyframes rot{
+    0%,20%,40%,60%,80%,100%{transform-origin: center top;}
+    0% {transform:rotate(0deg);}
+    20% {transform:rotate(20deg);}
+    40% {transform:rotate(-15deg);}
+    60% {transform:rotate(10deg);}
+    80% {transform:rotate(-5deg);}
+    100% {transform:rotate(0deg);}
+}
+@-webkit-keyframes rot{
+    0%,20%,40%,60%,80%,100%{transform-origin: center top;}
+    0% {transform:rotate(0deg);}
+    20% {transform:rotate(20deg);}
+    40% {transform:rotate(-15deg);}
+    60% {transform:rotate(10deg);}
+    80% {transform:rotate(-5deg);}
+    100% {transform:rotate(0deg);}
+}
+@keyframes scale{
+    0% {transform:scale(1);}
+    20% {transform:scale(1.2);}
+    40% {transform:scale(0.85);}
+    60% {transform:scale(1.1);}
+    80% {transform:scale(0.95);}
+    100% {transform:scale(1);}
+}
+@-webkit-keyframes scale{
+    0% {transform:scale(1);}
+    20% {transform:scale(1.2);}
+    40% {transform:scale(0.85);}
+    60% {transform:scale(1.1);}
+    80% {transform:scale(0.95);}
+    100% {transform:scale(1);}
+}
+@keyframes top{
+    0% {top:0px;}
+    20% {top:20px;}
+    40% {top:-15px;}
+    60% {top:10px;}
+    80% {top:-5px;}
+    100% {top:0px;}
+}
+@-webkit-keyframes top{
+    0% {top:0px;}
+    20% {top:20px;}
+    40% {top:-15px;}
+    60% {top:10px;}
+    80% {top:-5px;}
+    100% {top:0px;}
+}
+@keyframes left{
+    0% {left:0px;}
+    20% {left:20px;}
+    40% {left:-15px;}
+    60% {left:10px;}
+    80% {left:-5px;}
+    100% {left:0px;}
+}
+@-webkit-keyframes left{
+    0% {left:0px;}
+    20% {left:20px;}
+    40% {left:-15px;}
+    60% {left:10px;}
+    80% {left:-5px;}
+    100% {left:0px;}
+}
+/*商品手机结束*/
+
+
+
+
+
+
+
+/*商品轮播图2开始*/
+.main-carousel-2 {
+    height: 160px;
+    background: green;
+}
+.main-carousel-2 a {
+    display: inline-block;
+    height:160px;
+}
+.main-carousel-2 img {
+    display: block;
+    width: 1200px;
+    height:160px;
+}
+/*商品轮播图2结束*/
+
+
+
+
+/*商品分享开始*/
+.footershare {
+    background: url(../images/bg51.jpg) no-repeat center center;
+    height: 260px;
+    vertical-align: middle;
+    border-bottom: 1px solid #E5E5E5; /*边框色*/
+    margin-top: 10px;
+}
+
+.footershare .footershare-f {
+    top: 0;
+    right: 30px;
+}
+
+.footershare .footershare-f li {
+    margin-top: 8px;
+}
+
+.footershare .footershare-f a {
+    display: inline-block;
+    width: 182px;
+    height: 53px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footershare .footershare-f img {
+    border: 1px solid #E5E5E5; /*边框色*/
+}
+
+/*商品分享结束*/
+/*商品口号开始*/
+.footerlogo {
+    height: 100px;
+    border-bottom: 1px solid #E5E5E5; /*边框色*/
+}
+
+.footerlogo li {
+    float: left;
+}
+
+.footerlogo li .logo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    background: url(../images/icon14.png) no-repeat 0 0;
+}
+
+.footerlogo li .logo-t {
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 20px;
+    text-align: left;
+}
+
+/*商品口号结束*/
+/*商品售后开始*/
+.footersale {
+    height: 180px;
+    border-bottom: 1px solid #E5E5E5; /*边框色*/
+}
+
+.footersale dl {
+    display: inline-block;
+    height: 180px;
+    width: 85px;
+    float: left;
+    margin-left: 188px;
+    text-align: left;
+}
+
+.footersale dl:nth-child(1) {
+    margin-left: 20px;
+}
+
+.footersale dl:nth-child(5) {
+    float: right;
+}
+
+.footersale dl span {
+    top: 25px;
+    left: -20px;
+    width: 16px;
+    height: 28px;
+    background: url(../images/icon14.png) no-repeat 0 -68px;
+}
+
+.footersale dl dt {
+    margin: 30px auto 12px auto;
+    font-size: 20px;
+}
+
+.footersale dl dd {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/*商品售后结束*/
+/*商品外链开始*/
+.footerlink .footerlink-t {
+    margin: 30px auto;
+}
+
+.footerlink .footerlink-t li {
+    float: left;
+    font-size: 14px;
+    color: #8C8C8C;
+}
+
+.footerlink .footerlink-t li:last-child a {
+    color: red;
+}
+
+.footerlink .footerlink-c {
+    font-size: 14px;
+    color: #8C8C8C;
+}
+
+.footerlink .footerlink-b {
+    margin: 20px auto;
+}
+
+/*商品外链结束*/
